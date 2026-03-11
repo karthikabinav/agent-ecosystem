@@ -1,0 +1,10 @@
+{"task_id":"workops_001","track":"workops","prompt":"Summarize the incident action taken for checkout latency spike.","gold_answer":"SLA breach detected for checkout-service; owner paged; rollback initiated.","method":"exact_match","weight":1.0}
+{"task_id":"workops_002","track":"workops","prompt":"State the incident record update.","gold_answer":"Created incident ticket INC-2026-0311 and linked error budget dashboard.","method":"exact_match","weight":1.0}
+{"task_id":"workops_003","track":"workops","prompt":"Which deployment should be halted based on canary failure?","gold_answer":"halt deploy train release-2026.03.11-canary-7","method":"substring_match","weight":1.0}
+{"task_id":"workops_004","track":"workops","prompt":"Name the primary owner team for auth timeout issue.","gold_answer":"identity-platform-oncall","method":"exact_match","weight":1.0}
+{"task_id":"workops_005","track":"workops","prompt":"Provide rollback command for payments worker.","gold_answer":"kubectl rollout undo deploy/payments-worker -n prod","method":"substring_match","weight":1.0}
+{"task_id":"workops_006","track":"workops","prompt":"State the immediate mitigation for queue backlog.","gold_answer":"Scale consumers from 12 to 30 and drain DLQ in controlled batches.","method":"exact_match","weight":1.0}
+{"task_id":"workops_007","track":"workops","prompt":"What approval gate is required before production write access?","gold_answer":"two-person approval with security sign-off","method":"substring_match","weight":1.0}
+{"task_id":"workops_008","track":"workops","prompt":"Identify the correct change window for DB migration.","gold_answer":"02:00-03:00 UTC maintenance window","method":"exact_match","weight":1.0}
+{"task_id":"workops_009","track":"workops","prompt":"What runbook section handles API rate-limit saturation?","gold_answer":"Runbook §4.2: throttle upstream and enable token bucket burst mode.","method":"substring_match","weight":1.0}
+{"task_id":"workops_010","track":"workops","prompt":"List post-incident artifact that must be uploaded.","gold_answer":"blameless postmortem with timeline and corrective actions","method":"substring_match","weight":1.0}

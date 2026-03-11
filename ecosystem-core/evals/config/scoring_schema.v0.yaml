@@ -1,0 +1,25 @@
+version: v0
+score_range: [0.0, 1.0]
+aggregation:
+  per_task: weighted
+  per_track: weighted_mean
+  overall: weighted_mean
+
+methods:
+  exact_match:
+    description: Case-insensitive stripped exact match
+    pass_score: 1.0
+    fail_score: 0.0
+
+  substring_match:
+    description: Gold answer appears as a substring in prediction (case-insensitive)
+    pass_score: 1.0
+    fail_score: 0.0
+
+defaults:
+  method: exact_match
+  weight: 1.0
+
+tracks:
+  - workops
+  - knowledgeops

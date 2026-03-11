@@ -1,0 +1,10 @@
+{"task_id":"knowledgeops_001","track":"knowledgeops","prompt":"What is required before exporting logs containing user data?","gold_answer":"The policy requires PII redaction before exporting logs.","method":"exact_match","weight":1.0}
+{"task_id":"knowledgeops_002","track":"knowledgeops","prompt":"Summarize the top blockers from weekly review.","gold_answer":"Top 3 blockers: missing eval data, flaky staging env, no oncall handoff.","method":"exact_match","weight":1.0}
+{"task_id":"knowledgeops_003","track":"knowledgeops","prompt":"What is the documented model rollback criterion?","gold_answer":"rollback if win-rate drops >2% for 30 minutes","method":"substring_match","weight":1.0}
+{"task_id":"knowledgeops_004","track":"knowledgeops","prompt":"State the retention limit for debug traces.","gold_answer":"debug traces retained for 14 days","method":"substring_match","weight":1.0}
+{"task_id":"knowledgeops_005","track":"knowledgeops","prompt":"What citation standard is required in research summaries?","gold_answer":"every non-trivial claim must include source link and date","method":"substring_match","weight":1.0}
+{"task_id":"knowledgeops_006","track":"knowledgeops","prompt":"Give the canonical definition of task success rate.","gold_answer":"successful_tasks / attempted_tasks","method":"exact_match","weight":1.0}
+{"task_id":"knowledgeops_007","track":"knowledgeops","prompt":"What benchmark split is reserved for final reporting?","gold_answer":"held-out test split only","method":"substring_match","weight":1.0}
+{"task_id":"knowledgeops_008","track":"knowledgeops","prompt":"State the escalation policy for critical hallucination events.","gold_answer":"page safety lead immediately and freeze rollout","method":"substring_match","weight":1.0}
+{"task_id":"knowledgeops_009","track":"knowledgeops","prompt":"What is the mandatory section in decision memos?","gold_answer":"Alternatives considered and rejection rationale","method":"substring_match","weight":1.0}
+{"task_id":"knowledgeops_010","track":"knowledgeops","prompt":"How often should calibration audits run?","gold_answer":"weekly","method":"exact_match","weight":1.0}

@@ -1,0 +1,4 @@
+{"task_id":"workops_001","predicted_answer":"SLA breach detected for checkout-service; owner paged; rollback initiated.","metadata":{"model":"baseline-agent-v0"}}
+{"task_id":"workops_002","predicted_answer":"Created incident ticket INC-2026-0311 and linked error budget dashboard.","metadata":{"model":"baseline-agent-v0"}}
+{"task_id":"knowledgeops_001","predicted_answer":"The policy requires PII redaction before exporting logs.","metadata":{"model":"baseline-agent-v0"}}
+{"task_id":"knowledgeops_002","predicted_answer":"Top 3 blockers: missing eval data, flaky staging env, no oncall handoff.","metadata":{"model":"baseline-agent-v0"}}

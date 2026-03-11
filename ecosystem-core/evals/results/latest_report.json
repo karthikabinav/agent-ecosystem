@@ -1,0 +1,179 @@
+{
+  "harness_version": "v0",
+  "num_gold_tasks": 20,
+  "num_predictions": 4,
+  "coverage": 0.2,
+  "overall_weighted_avg": 0.2,
+  "track_summary": {
+    "workops": {
+      "num_tasks": 10,
+      "weighted_avg": 0.2
+    },
+    "knowledgeops": {
+      "num_tasks": 10,
+      "weighted_avg": 0.2
+    }
+  },
+  "per_task": [
+    {
+      "task_id": "workops_001",
+      "track": "workops",
+      "method": "exact_match",
+      "weight": 1.0,
+      "score": 1.0,
+      "has_prediction": true
+    },
+    {
+      "task_id": "workops_002",
+      "track": "workops",
+      "method": "exact_match",
+      "weight": 1.0,
+      "score": 1.0,
+      "has_prediction": true
+    },
+    {
+      "task_id": "workops_003",
+      "track": "workops",
+      "method": "substring_match",
+      "weight": 1.0,
+      "score": 0.0,
+      "has_prediction": false
+    },
+    {
+      "task_id": "workops_004",
+      "track": "workops",
+      "method": "exact_match",
+      "weight": 1.0,
+      "score": 0.0,
+      "has_prediction": false
+    },
+    {
+      "task_id": "workops_005",
+      "track": "workops",
+      "method": "substring_match",
+      "weight": 1.0,
+      "score": 0.0,
+      "has_prediction": false
+    },
+    {
+      "task_id": "workops_006",
+      "track": "workops",
+      "method": "exact_match",
+      "weight": 1.0,
+      "score": 0.0,
+      "has_prediction": false
+    },
+    {
+      "task_id": "workops_007",
+      "track": "workops",
+      "method": "substring_match",
+      "weight": 1.0,
+      "score": 0.0,
+      "has_prediction": false
+    },
+    {
+      "task_id": "workops_008",
+      "track": "workops",
+      "method": "exact_match",
+      "weight": 1.0,
+      "score": 0.0,
+      "has_prediction": false
+    },
+    {
+      "task_id": "workops_009",
+      "track": "workops",
+      "method": "substring_match",
+      "weight": 1.0,
+      "score": 0.0,
+      "has_prediction": false
+    },
+    {
+      "task_id": "workops_010",
+      "track": "workops",
+      "method": "substring_match",
+      "weight": 1.0,
+      "score": 0.0,
+      "has_prediction": false
+    },
+    {
+      "task_id": "knowledgeops_001",
+      "track": "knowledgeops",
+      "method": "exact_match",
+      "weight": 1.0,
+      "score": 1.0,
+      "has_prediction": true
+    },
+    {
+      "task_id": "knowledgeops_002",
+      "track": "knowledgeops",
+      "method": "exact_match",
+      "weight": 1.0,
+      "score": 1.0,
+      "has_prediction": true
+    },
+    {
+      "task_id": "knowledgeops_003",
+      "track": "knowledgeops",
+      "method": "substring_match",
+      "weight": 1.0,
+      "score": 0.0,
+      "has_prediction": false
+    },
+    {
+      "task_id": "knowledgeops_004",
+      "track": "knowledgeops",
+      "method": "substring_match",
+      "weight": 1.0,
+      "score": 0.0,
+      "has_prediction": false
+    },
+    {
+      "task_id": "knowledgeops_005",
+      "track": "knowledgeops",
+      "method": "substring_match",
+      "weight": 1.0,
+      "score": 0.0,
+      "has_prediction": false
+    },
+    {
+      "task_id": "knowledgeops_006",
+      "track": "knowledgeops",
+      "method": "exact_match",
+      "weight": 1.0,
+      "score": 0.0,
+      "has_prediction": false
+    },
+    {
+      "task_id": "knowledgeops_007",
+      "track": "knowledgeops",
+      "method": "substring_match",
+      "weight": 1.0,
+      "score": 0.0,
+      "has_prediction": false
+    },
+    {
+      "task_id": "knowledgeops_008",
+      "track": "knowledgeops",
+      "method": "substring_match",
+      "weight": 1.0,
+      "score": 0.0,
+      "has_prediction": false
+    },
+    {
+      "task_id": "knowledgeops_009",
+      "track": "knowledgeops",
+      "method": "substring_match",
+      "weight": 1.0,
+      "score": 0.0,
+      "has_prediction": false
+    },
+    {
+      "task_id": "knowledgeops_010",
+      "track": "knowledgeops",
+      "method": "exact_match",
+      "weight": 1.0,
+      "score": 0.0,
+      "has_prediction": false
+    }
+  ]
+}
