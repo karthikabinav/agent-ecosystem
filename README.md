@@ -1,5 +1,7 @@
 # Agent Ecosystem — Week 1 Foundation
 
+[![Lint](https://github.com/karthikabinav/agent-ecosystem/actions/workflows/lint.yml/badge.svg)](https://github.com/karthikabinav/agent-ecosystem/actions/workflows/lint.yml)
+
 This repository is the initial scaffold for an agent-software ecosystem.
 
 ## Structure
