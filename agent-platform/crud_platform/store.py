@@ -24,9 +24,12 @@ class InMemoryAgentStore:
         with self._lock:
             return self._agents.get(agent_id)
 
-    def list(self) -> list[Agent]:
+    def list(self, *, status: str | None = None) -> list[Agent]:
         with self._lock:
-            return list(self._agents.values())
+            agents = list(self._agents.values())
+            if status is None:
+                return agents
+            return [agent for agent in agents if agent.status == status]
 
     def update(self, agent_id: str, **fields: Any) -> Agent | None:
         with self._lock:

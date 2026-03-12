@@ -4,6 +4,7 @@ import json
 from dataclasses import asdict
 from datetime import datetime
 from http import HTTPStatus
+from urllib.parse import parse_qs
 from wsgiref.simple_server import make_server
 
 from .models import AgentCreate
@@ -31,7 +32,9 @@ def app(environ, start_response):
         return [body]
 
     if path == "/agents" and method == "GET":
-        agents = [asdict(a) for a in store.list()]
+        query = parse_qs(environ.get("QUERY_STRING", ""))
+        status = query.get("status", [None])[0]
+        agents = [asdict(a) for a in store.list(status=status)]
         body = _to_json_bytes({"items": agents})
         start_response(f"{HTTPStatus.OK.value} OK", [("Content-Type", "application/json")])
         return [body]

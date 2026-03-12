@@ -24,6 +24,19 @@ class TestInMemoryAgentStore(unittest.TestCase):
         self.assertTrue(deleted)
         self.assertIsNone(self.store.get(created.id))
 
+    def test_list_can_filter_by_status(self):
+        self.store.create(AgentCreate(name="planner", status="active"))
+        self.store.create(AgentCreate(name="researcher", status="paused"))
+        self.store.create(AgentCreate(name="executor", status="active"))
+
+        active = self.store.list(status="active")
+        paused = self.store.list(status="paused")
+
+        self.assertEqual(len(active), 2)
+        self.assertEqual(len(paused), 1)
+        self.assertTrue(all(agent.status == "active" for agent in active))
+        self.assertTrue(all(agent.status == "paused" for agent in paused))
+
 
 if __name__ == "__main__":
     unittest.main()
